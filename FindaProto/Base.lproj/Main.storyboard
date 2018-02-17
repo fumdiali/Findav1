@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindaProto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rss-iu-daj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="343"/>
+                            </mapView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-ho-dwB">
+                                <rect key="frame" x="0.0" y="351" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rss-iu-daj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Yr-hp-amA"/>
+                            <constraint firstItem="rss-iu-daj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="406-wi-tJZ"/>
+                            <constraint firstItem="9hz-ho-dwB" firstAttribute="top" secondItem="rss-iu-daj" secondAttribute="bottom" constant="8" id="Ait-pZ-taU"/>
+                            <constraint firstItem="rss-iu-daj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dFq-Ei-qUC"/>
+                            <constraint firstItem="9hz-ho-dwB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e6m-cc-qHw"/>
+                            <constraint firstItem="9hz-ho-dwB" firstAttribute="top" secondItem="rss-iu-daj" secondAttribute="bottom" constant="8" id="fVA-mf-Cfp"/>
+                            <constraint firstItem="9hz-ho-dwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sbC-K7-L3t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9hz-ho-dwB" secondAttribute="bottom" constant="1" id="uyZ-LR-zMY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="rss-iu-daj" id="Qxs-1Y-XXo"/>
+                        <outlet property="pickerView" destination="9hz-ho-dwB" id="mG9-Ke-dgq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+</document>
