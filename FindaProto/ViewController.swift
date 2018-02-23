@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         // centre map on lagos
         let coordinate = CLLocationCoordinate2D(latitude: 6.4844, longitude: 3.3992)
-        let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.1, 0.1))
+        let region = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.101, 0.101))
         mapView.setRegion(region, animated: true)
     }
 
@@ -76,12 +76,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             myAnnotation.coordinate = CLLocationCoordinate2D(latitude: 6.5818, longitude: 3.3211)
             mapView.addAnnotation(myAnnotation)
         case locations[1]:
-            // osborne road
-            myAnnotation.coordinate = CLLocationCoordinate2D(latitude: 6.4431, longitude: 3.4229)
+            // police stations
+            myAnnotation.coordinate = CLLocationCoordinate2D(latitude: 6.5333, longitude: 3.3833)
+            myAnnotation.coordinate = CLLocationCoordinate2D(latitude: 6.4548, longitude: 3.4347)
+            mapView.addAnnotation(myAnnotation)
             mapView.addAnnotation(myAnnotation)
         case locations[2]:
             // ebute metta
-            MKCoordinateRegionMake(myAnnotation.coordinate, MKCoordinateSpanMake(0.01, 0.01))
             myAnnotation.coordinate = CLLocationCoordinate2D(latitude: 6.4845, longitude: 3.3767)
             mapView.addAnnotation(myAnnotation)
         case locations[3]:
@@ -90,7 +91,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             mapView.addAnnotation(myAnnotation)
         case locations[4]:
             // ikoyi road
-            MKCoordinateRegionMake(myAnnotation.coordinate, MKCoordinateSpanMake(0.01, 0.01))
             myAnnotation.coordinate = CLLocationCoordinate2D(latitude: 6.4548, longitude: 3.4347)
             mapView.addAnnotation(myAnnotation)
         default:

@@ -13,6 +13,7 @@
 		18221BA920372B400031F31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18221BA820372B400031F31E /* Assets.xcassets */; };
 		18221BAC20372B400031F31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18221BAA20372B400031F31E /* LaunchScreen.storyboard */; };
 		18221BB520372B800031F31E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18221BB420372B800031F31E /* MapKit.framework */; };
+		1843F98620406C0600DAC0E5 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1843F98520406C0600DAC0E5 /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18221BAB20372B400031F31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18221BAD20372B400031F31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18221BB420372B800031F31E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1843F98520406C0600DAC0E5 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				18221BA320372B400031F31E /* ViewController.swift */,
 				18221BA520372B400031F31E /* Main.storyboard */,
 				18221BA820372B400031F31E /* Assets.xcassets */,
+				1843F98520406C0600DAC0E5 /* map.png */,
 				18221BAA20372B400031F31E /* LaunchScreen.storyboard */,
 				18221BAD20372B400031F31E /* Info.plist */,
 			);
@@ -135,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1843F98620406C0600DAC0E5 /* map.png in Resources */,
 				18221BAC20372B400031F31E /* LaunchScreen.storyboard in Resources */,
 				18221BA920372B400031F31E /* Assets.xcassets in Resources */,
 				18221BA720372B400031F31E /* Main.storyboard in Resources */,
